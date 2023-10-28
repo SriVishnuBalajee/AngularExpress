@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    color:yellow;
+    background-image: url("https://media1.giphy.com/media/B4jfJqiIxvU08/giphy.gif?cid=ecf05e4750yds7di3y1hfxdvd63b0szdzwgtfb4k4cz2p9yh&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }

@@ -1,0 +1,36 @@
+<div>
+    <legend>Enter User Data</legend>
+    <form #userData="ngForm" >
+      <label>FirstName</label><input type="text" name="fname" ngModel><br>
+      <label>LastName</label><input type="text" name="lname" ngModel><br>
+      <label>Email</label><input type="email" name="email" ngModel><br>
+      <label>PhoneNumber</label><input type="email" name="pnumber" ngModel><br>
+      <label>Address</label><input type="email" name="add" ngModel><br>
+   
+      <input type="button" class="button" value="Get" (click)="getAllUsers()"/><br>
+      <input type="button" class="button" value="Add User" (click)="addUser(userData)"><br>
+      <input type="button" class="button" value="Update User" (click)="updateUser(userData)"><br>
+      <input type="button" class="button" value="Delete User" (click)="deleteUser(userData)"> <br>
+      </form> 
+      <hr>
+      <!-- <hr>
+      <div>
+        <h2>User Found!</h2>
+        <table>
+          <tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Join Date</td><td>Salary</td></tr>
+          <tr *ngFor="let user of getuserarray"><td>{{user.firstName}}</td><td>{{user.lastName}}</td><td>{{user.email}}</td><td>{{user.joinDate}}</td><td>{{user.salary}}</td></tr>
+        </table>
+       </div>
+       <hr> -->
+       <hr>
+      <table>
+        <tr><td>FirstName</td><td>LastName</td><td>Email</td><td>PhoneNumber</td><td>Address</td></tr>
+        <tr *ngFor="let user of detailsArray">
+          <td>{{user.FirstName}}</td>
+          <td>{{user.LastName}}</td>
+          <td>{{user.Email}}</td>
+          <td>{{user.PhoneNumber}}</td>
+          <td>{{user.Address}}</td>
+        </tr>
+        </table>
+    </div>
